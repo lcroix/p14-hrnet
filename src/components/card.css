@@ -1,0 +1,10 @@
+.feature-card {
+    background-color: #fff;
+    max-width: 350px;
+    width: 28%;
+    height: 10em;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+}

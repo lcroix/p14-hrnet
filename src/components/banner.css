@@ -1,0 +1,21 @@
+.banner {
+    position: relative;
+}
+.banner-img {
+    width: 100%;
+    max-height: 20em;
+    object-fit: cover;
+}
+.banner-text {
+    position: absolute;
+    z-index: 1;
+    top: 15%;
+    right: 5%;
+}
+h1 {
+    color: #173fad;
+    font-family: "Syne";
+}
+.text {
+    font-weight: 500;
+}

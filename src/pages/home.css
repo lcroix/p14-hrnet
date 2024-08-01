@@ -1,0 +1,44 @@
+.features {
+    background-color: #173fad;
+    margin-top: -1.6em;
+}
+.feature-cards {
+    justify-content: space-around;
+    display: flex;
+    padding: 2em 0;
+}
+.features-title {
+    color: #fff;
+    padding-block: 1em;
+    font-family: "Syne";
+}
+.cta-title {
+    padding-block: 1em;
+    font-family: "Syne";
+}
+.cta {
+    position: relative;
+    padding: 2em 0;
+}
+.cta .cta-links ::before {
+    content: " ";
+    background-color: #173fad;
+    position: absolute;
+    width: 100%;
+    height: 1%;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+.cta-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.cta-button {
+    background-color: #173fad;
+    color: #fff;
+    border: 0.5px solid;
+    padding: 0.5em 1em;
+    width: 20%;
+}
