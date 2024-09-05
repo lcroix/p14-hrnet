@@ -1,255 +1,350 @@
 .sectionForm {
-	border-radius: 10px;
-	box-shadow: 5px 2px 20px 10px rgba(0, 0, 0, 0.1);
-	display: flex;
-    justify-content: center;
-	margin-top: 120px;
-	margin-left: 27px;
-	margin-right: 27px;
-	margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 2px 20px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-left: 27px;
+  margin-right: 27px;
+  margin-bottom: 50px;
 }
 
 .formLeft {
-	align-items: center;
-	background-color: #73832c;
-	border-bottom-left-radius: 10px;
-	border-top-left-radius: 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 50%;
-	max-height: 900px;
+  align-items: center;
+  background-color: #73832c;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  max-height: 900px;
 }
 
-
-
-
 .formRight {
-	display: flex;
-	flex-direction: column;
-	padding: 20px;
-	width: 50%;
-
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 50%;
 }
 
 .formContainer {
-	display: flex;
-	justify-content: center;
-	padding: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
 }
 
 .form {
-	display: flex;
-	gap: 1rem;
-	width: 100%;
-	max-width: 80rem;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 80rem;
 }
 
 .form fieldset {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-	width: 100%;
-	position: relative;
-	border: none;
-	padding: 0;
-	margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  position: relative;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
-
-
 .formGroup {
-	display: flex;
-	gap: 2rem;
-	width: 200px;
+  display: flex;
+  gap: 2rem;
+  width: 200px;
 }
 
 .formGroupControl {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 200px;
 }
 
 form .dropdown {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 200px;
 }
 
 label {
-	display: flex;
-	gap: 0.5rem;
-	font-size: clamp(1.5rem, 1.7vw, 1.7rem);
+  display: flex;
+  gap: 0.5rem;
+  font-size: clamp(1.5rem, 1.7vw, 1.7rem);
 }
 
 .title {
-	font-size: clamp(2.5rem, 2.8vw, 2.8rem);
-	font-weight: 900;
-	margin-bottom: 10px;
-	margin-top: 20px;
+  font-size: clamp(2.5rem, 2.8vw, 2.8rem);
+  font-weight: 900;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .horizontalBar {
-	margin-left: 0.4rem;
-	/* height: 0.8rem; */
-	/* background: linear-gradient(to right, #daf7a6, powderblue); */
-	height: 0.5rem;
-	background: linear-gradient(to right, #4d5540, #bfd3d5);
-	width: 100%;
+  margin-left: 0.4rem;
+   height: 0.8rem; 
+   background: linear-gradient(to right, #daf7a6, powderblue); 
+  height: 0.5rem;
+  background: linear-gradient(to right, #4d5540, #bfd3d5);
+  width: 100%;
 }
 
 .formGroupControl input {
-	width: 100%;
-	height: 1rem;
-	/* height: 2.5rem; */
-	/* padding: 0 1rem; */
-	padding: 5px 5px;
-	border: 1.75px solid #000;
-	font-size: clamp(1.5rem, 1.7vw, 1.7rem);
-	border-radius: 0.5rem;
-	transition: border-color 0.5s;
+  width: 100%;
+  height: 1rem;
+  padding: 5px ;
+  font-size: 16px;
+  border: 1.75px solid #000;
+  border-radius: 0.5rem;
+  transition: border-color 0.5s;
+}
+.formGroupControl .submit-button {
+  height: 1.5rem;
+  padding-bottom: 22px;
+}
+.formGroupControl .submit-button:hover{
+  border-color:#0056b3;
+  background-color: #007bff;
+  transition: 0.5s;
+  color: white;
 }
 
 .formGroupControl input:focus {
-	border-color: #007bff;
-	/* border-color: #157846; */
-	outline: none;
-	box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+  border-color: #007bff;
+  /* border-color: #157846; */
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
 /* Base container styles */
 .selectDate {
-	margin-bottom: 20px;
-	display: flex;
-	flex-direction: column;
-  }
-  
-  /* Label styling */
-  .selectDate label {
-	font-size: 16px;
-	color: #333;
-	margin-bottom: 8px;
-	font-weight: bold;
-  }
-  
-  .DatePicker:hover {
-	border-color: #007bff;
-  }
-  
-  /* Styles pour l'état actif du DatePicker */
-  .DatePicker:focus {
-	outline: none;
-	border-color: #0056b3;
-	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  }
-  
-  /* Styles pour le menu déroulant de sélection de date */
-  .DatePicker select {
-	border: none;
-	outline: none;
-	background: none;
-	font-size: 14px;
-	color: #333;
-  }
-  
-  /* Styles pour les options dans le menu déroulant */
-  .DatePicker option {
-	padding: 8px;
-  }
-  
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+.selectDate label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.DatePicker:hover {
+  border-color: #007bff;
+}
+
+/* Styles pour l'état actif du DatePicker */
+.DatePicker:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styles pour le menu déroulant de sélection de date */
+.DatePicker select {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Styles pour les options dans le menu déroulant */
+.DatePicker option {
+  padding: 8px;
+}
 
 .address {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 .dropdownDept {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
 }
 
-.dropdownDept::before {
-	content: "";
-	position: absolute;
-	bottom: 80px;
-	left: 114px;
-	width: 60%;
-	height: 1.3px;
-	background-color: #625e4c;
-}
+/* .dropdownDept::before {
+  content: "";
+  position: absolute;
+  bottom: 80px;
+  left: 114px;
+  width: 60%;
+  height: 1.3px;
+  background-color: #625e4c;
+} */
 
 .submitBtn {
-	cursor: pointer;
-	display: block;
-	margin-top: 2rem;
-	/* width: 50%; */
-	width: 40%;
-	margin-inline: auto;
-	background-color: #93ad18;
-	/* color: #fff; */
-	color: black;
-	height: 4rem;
-	border-radius: 0.5rem;
-	border: none;
-	font-size: clamp(1.8rem, 2vw, 2rem);
-	/* font-size: clamp(1rem, 1.3vw, 1.3rem); */
-	font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin-top: 2rem;
+  width: 40%;
+  margin-inline: auto;
+  background-color: #93ad18;
+  color: black;
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: clamp(1.8rem, 2vw, 2rem);
+  font-weight: 600;
 }
 
 .submitBtn:hover {
-	/* background-color: #596521; */
-	background-color: #73832c;
+  background-color: #73832c;
 }
 
 .form .error {
-	color: #d41f4a;
-	/* font-weight: 600; */
-	/* font-size: clamp(1.6rem, 1.6vw, 1.6rem); */
-	font-size: clamp(1rem, 1.3vw, 1.3rem);
+  color: #d41f4a;
+  font-size: clamp(1rem, 1.3vw, 1.3rem);
 }
 
 /* Media queries */
 
 @media screen and (max-width: 1024px) {
-	.dropdownDept::before {
-		left: 90px;
-	}
-	.formLeft img {
-		width: 90%;
-	}
+  .dropdownDept::before {
+    left: 90px;
+  }
+  .formLeft img {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 790px) {
-	/*.form fieldset {
+  /*.form fieldset {
 		width: 80%;
 	}*/
-	.formGroup {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-	}
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-	.formLeft {
-		display: none;
-	}
-	.formRight {
-		width: 100%;
-	}
-	.dropdownDept::before {
-		left: 120px;
-	}
+  .formLeft {
+    display: none;
+  }
+  .formRight {
+    width: 100%;
+  }
+  .dropdownDept::before {
+    left: 120px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-	.formContainer {
-		padding: 2rem 1rem;
-	}
-	.dropdownDept::before {
-		left: 43px;
-		width: 70%;
-	}
+  .formContainer {
+    padding: 2rem 1rem;
+  }
+  .dropdownDept::before {
+    left: 43px;
+    width: 70%;
+  }
 }
+.modal {
+	position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeBtn {
+  cursor: pointer;
+  font-size: 24px;
+  color: #aaa;
+  transition: color 0.3s;
+}
+
+.closeBtn:hover {
+  color: #000;
+}
+
+.modalBody {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
+.modalBody img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100px;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.modal-content{
+  background: white;
+  width: 60%;
+  height: 40%;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.modalButton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.modalButton:hover {
+  background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+

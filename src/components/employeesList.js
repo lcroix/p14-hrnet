@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import DataTable from "react-data-table-component";
 import DataTableExtensions from "react-data-table-component-extensions";
 import 'react-data-table-component-extensions/dist/index.css';
+import './employeesList.css'
 
 export default function AllEmployees() {
     const employees = useSelector(state => state.employees.employees);
@@ -65,26 +66,26 @@ export default function AllEmployees() {
                         Import employees list
                     </label>
                 </div>
-            </div>
             <div className="employees-list-container">
                 {employees && employees.length > 0 ? (
                     <DataTableExtensions
-                        columns={columns}
-                        data={employees}
-                        print={false}
-                        export={false}
-                        filterPlaceholder="Search"
+                    columns={columns}
+                    data={employees}
+                    print={false}
+                    export={false}
+                    filterPlaceholder="Search"
                     >
                         <DataTable
                             title="Employee List"
                             noHeader
                             pagination
                             highlightOnHover
-                        />
+                            />
                     </DataTableExtensions>
                 ) : (
                     <div>No employees created.</div>
-                )}
+                    )}
+                    </div>
             </div>
         </>
     );
