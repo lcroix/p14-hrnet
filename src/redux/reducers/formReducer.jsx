@@ -1,13 +1,4 @@
-// import storage from "redux-persist/lib/storage";
-// import {
-//     persistReducer,
-//     FLUSH,
-//     REHYDRATE,
-//     PAUSE,
-//     PERSIST,
-//     PURGE,
-//     REGISTER,
-// } from "redux-persist";
+
 import { USER_ADD, EMPLOYEES_ADD } from "../actions/formAction";
 
 
@@ -27,7 +18,7 @@ const initialState = {
 };
 const initialStateEmployees = {
     employees: [],
-    status: 'IDLE', // ou tout autre état initial pertinent
+    status: 'IDLE',
 };
 
 export const formReducer = (state = initialState, action) => {

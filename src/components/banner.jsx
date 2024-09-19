@@ -1,5 +1,5 @@
-import "./banner.css";
 import React from "react";
+import "./banner.css";
 import banner from "../assets/banner.avif";
 import { useNavigate } from 'react-router-dom';
 function Banner() {
