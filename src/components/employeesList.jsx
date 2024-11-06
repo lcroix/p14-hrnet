@@ -15,19 +15,12 @@ export default function AllEmployees() {
     { nodes: employees },
     {
       state: { page: 0, size: 10 },
-      onChange: onPaginationChange,
     }
   );
 
-  function onPaginationChange(action, state) {
-    console.log(action, state);
-  }
-
   const sort = useSort(
     { nodes: employees },
-    {
-      onChange: onSortChange,
-    },
+    {},
     {
       sortFns: {
         FIRST_NAME: (array) =>
@@ -48,6 +41,7 @@ export default function AllEmployees() {
       },
     }
   );
+
   const COLUMNS = [
     {
       label: "First Name",
@@ -95,10 +89,6 @@ export default function AllEmployees() {
       sort: { sortKey: "ZIPCODE" },
     },
   ];
-
-  function onSortChange(action, state) {
-    console.log(action, state);
-  }
 
   // Filter employees based on the search term
   const filteredEmployees = employees.filter((employee) =>
