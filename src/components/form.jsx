@@ -8,15 +8,14 @@ import { useradd, employeesAdd } from "../redux/actions/formAction";
 import { useDispatch } from "react-redux";
 import "react-datepicker/dist/react-datepicker.css";
 import ModalComponent from "lcroix-confirm-popup";
-import { useNavigate } from "react-router-dom";
 
 export default function Form() {
   const [selectedState, setSelectedState] = useState(null);
   const [selectedDepartement, setSelectedDepartement] = useState(null);
   const [birthDate, setBirthDate] = useState(null);
   const [startDate, setStartDate] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const dispatch = useDispatch();
 
   const handleForm = async (e) => {
@@ -68,11 +67,6 @@ export default function Form() {
     setIsModalOpen(false);
   };
 
-  const navigate = useNavigate();
-  const handleButtonClick = () => {
-    setIsModalOpen(false);
-    navigate("/employee-list");
-  };
 
   return (
     <section className="sectionForm">
@@ -160,17 +154,18 @@ export default function Form() {
               disabled={isLoading}
             />
           </form>
-          {isModalOpen && (
-            <ModalComponent
-              className="modal-content"
-              message="L'employé a bien été ajouté !"
-              buttonText="OK"
-              onClose={handleCloseModal}
-              onButtonClick={handleButtonClick}
-              buttonColor="blue"
-            />
-          )}
         </div>
+        {isModalOpen && (
+          <ModalComponent
+            className="modal-content"
+            message={"L'employé a bien été ajouté "}
+            navigatePage= '/employee-list'
+            buttonText="OK"
+            onClose={handleCloseModal}
+         
+            buttonColor="blue"
+          />
+        )}
       </div>
     </section>
   );
